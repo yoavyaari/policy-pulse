@@ -48,3 +48,16 @@ export default tseslint.config({
   },
 })
 ```
+
+## Environment Variables
+
+The application expects Supabase credentials to be provided at build time. Add
+the following variables to your `.env` file in the `frontend` directory:
+
+```bash
+VITE_SUPABASE_URL=<your-supabase-url>
+VITE_SUPABASE_ANON_KEY=<your-supabase-anon-key>
+```
+
+Vite exposes these variables through `import.meta.env`, allowing the frontend to
+connect to your Supabase instance.
