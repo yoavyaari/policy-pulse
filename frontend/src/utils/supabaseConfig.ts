@@ -1,9 +1,8 @@
 import { createClient } from "@supabase/supabase-js";
 
-// Use the environment variables provided during the setup
-const supabaseUrl = "https://ytwedbxohfvlbcisoluq.supabase.co";
-// Use the public anon key
-const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl0d2VkYnhvaGZ2bGJjaXNvbHVxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU4MzI2OTQsImV4cCI6MjA2MTQwODY5NH0.EnY50YOW1SKafnEvKe03gXlGj7scorZA5heSsSJBAH0";
+// Read credentials from Vite environment variables
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
 if (!supabaseUrl || !supabaseAnonKey) {
   console.error(
