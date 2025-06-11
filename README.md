@@ -4,7 +4,7 @@ This project consists of a FastAPI backend server and a React + TypeScript front
 
 ## Stack
 
-- React+Typescript frontend with `yarn` as package manager.
+- React + TypeScript frontend with `yarn` as package manager.
 - Python FastAPI server with `uv` as package manager.
 
 ## Quickstart
