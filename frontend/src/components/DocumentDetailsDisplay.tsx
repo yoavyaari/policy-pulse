@@ -262,8 +262,8 @@ export const DocumentDetailsDisplay: React.FC<Props> = ({ documentId, projectId,
                 <CardDescription className="text-xs text-gray-500">ID: {documentDetails.id}</CardDescription>
               </div>
               <div className="flex flex-col items-end space-y-1">
-                <Badge 
-                  variant={documentDetails.status === 'processed' ? 'success' : documentDetails.status === 'error' ? 'destructive' : 'secondary'}
+                <Badge
+                  variant={documentDetails.status === 'processed' ? 'default' : documentDetails.status === 'error' ? 'destructive' : 'secondary'}
                   className="text-xs font-medium"
                 > 
                   {documentDetails.status?.toUpperCase() || "UNKNOWN"}
